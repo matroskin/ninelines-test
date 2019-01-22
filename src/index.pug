@@ -1,7 +1,12 @@
 extends pug/base
 
+prepend vars
+	- title = 'Анкета - Дмитрий Киселев'
+	- description = 'Тестовое задание для HTML-верстальщиков «Девять линий»'
+
 append vars
 	//- ...
 
 block content
-	//- ...
+	.container
+		include pug/contacts

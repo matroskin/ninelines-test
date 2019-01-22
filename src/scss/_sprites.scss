@@ -1,4 +1,45 @@
-$sprites: ();
+$sprites: (
+	"avatar": (
+		normal: (
+			x: 0,
+			y: 252,
+			width: 138,
+			height: 138,
+			image: "sprites.png",
+			total_width: 660,
+			total_height: 390,
+		),
+		retina: (
+			x: 0,
+			y: 504,
+			width: 276,
+			height: 276,
+			image: "sprites@2x.png",
+			total_width: 1320,
+			total_height: 780,
+		),
+	),
+	"mask": (
+		normal: (
+			x: 0,
+			y: 0,
+			width: 660,
+			height: 250,
+			image: "sprites.png",
+			total_width: 660,
+			total_height: 390,
+		),
+		retina: (
+			x: 0,
+			y: 0,
+			width: 1320,
+			height: 500,
+			image: "sprites@2x.png",
+			total_width: 1320,
+			total_height: 780,
+		),
+	),
+);
 
 @each $name in map-keys($sprites) {
 	.sprite-#{$name} {

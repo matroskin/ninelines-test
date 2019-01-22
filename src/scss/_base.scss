@@ -9,5 +9,75 @@ html {
 }
 
 body {
-    font-family: $font-family-roboto;
+	font-family: $font-family-roboto;
+	background-color: $color-snow;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 60px 0 100px;
+	width: 660px;
+}
+
+.block {
+	position: relative;
+	margin-bottom: 2px;
+	padding: 0 20px;
+	min-height: 250px;
+	background-color: $color-white;
+}
+
+.title {
+	font-weight: 500;
+	font-size: 18px;
+	color: $color-mine-shaft;
+}
+
+.block__contacts {
+	.sprite-avatar {
+		margin-top: 30px;
+	}
+
+	.info {
+		margin-top: 21px;
+
+		input {
+			margin-bottom: 27px;
+			border: none;
+			border-bottom: 2px solid $color-mine-shaft;
+			padding-right: 0;
+			padding-left: 0;
+			height: 29px;
+			box-shadow: none;
+			font-weight: 500;
+			font-size: 12px;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+			color: $color-dove-gray;
+			transition: border-color 0.3s;
+
+			&::placeholder {
+				font-size: 12px;
+				text-transform: uppercase;
+				color: $color-dove-gray;
+			}
+
+			&:focus {
+				border: none;
+				border-bottom: 2px solid $color-mine-shaft;
+				box-shadow: none;
+			}
+		}
+	}
+
+	.stamp {
+		position: absolute;
+		right: 4px;
+		bottom: 5px;
+
+		svg {
+			width: 184px;
+			height: 166px;
+		}
+	}
 }

@@ -1,0 +1,37 @@
+.block.block__contacts.grid-container
+	.grid-x.grid-margin-x
+		.cell.small-8.medium-2
+			.sprite-avatar
+
+		.cell.small-8.medium-6
+			form.info
+				+input({
+					type: "text",
+					placeholder: "Имя",
+					name: "name",
+					value: "Дмитрий Киселев"
+				})
+
+				+input({
+					type: "text",
+					placeholder: "Дата рождения",
+					name: "birthday",
+					value: "15 июня 1991"
+				})
+
+				+input({
+					type: "text",
+					placeholder: "Город",
+					name: "city",
+					value: "Воронеж"
+				})
+
+				+input({
+					type: "text",
+					placeholder: "Контактные данные",
+					name: "contacts",
+					value: "+79204450025 (telegram, whatsapp)"
+				})
+
+			.stamp
+				+svg("stamp")
