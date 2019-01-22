@@ -149,3 +149,74 @@ body {
 		}
 	}
 }
+
+.block__animate {
+	.gauge {
+		position: relative;
+		margin-top: 58px;
+
+		.meter {
+			svg {
+				width: 254px;
+				height: 127px;
+			}
+		}
+
+		.arrow {
+			position: absolute;
+			left: 73px;
+			bottom: -55px;
+
+			svg {
+				width: 110px;
+				height: 110px;
+				animation: spin 3s forwards ease-in-out;
+			}
+		}
+	}
+
+	.title {
+		margin-top: 60px;
+	}
+
+	.spincrement {
+		font-family: $font-family-roboto;
+		font-weight: 900;
+		font-size: 50px;
+		color: $color-blue;
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	15% {
+		transform: rotate(10deg);
+	}
+
+	25% {
+		transform: rotate(55deg);
+	}
+
+	30% {
+		transform: rotate(90deg);
+	}
+
+	35% {
+		transform: rotate(170deg);
+	}
+
+	45% {
+		transform: rotate(150deg);
+	}
+
+	50% {
+		transform: rotate(180deg);
+	}
+
+	100% {
+		transform: rotate(150deg);
+	}
+}
