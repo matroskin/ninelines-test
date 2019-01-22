@@ -220,3 +220,39 @@ body {
 		transform: rotate(150deg);
 	}
 }
+
+@media screen and (max-width: 680px) {
+	.container {
+		padding: 0;
+		width: 100%;
+	}
+
+	.block__contacts {
+		.sprite-avatar {
+			display: block;
+			margin: 30px auto 0;
+		}
+
+		.stamp {
+			display: none;
+		}
+	}
+
+	.block__animate {
+		.gauge {
+			margin: 58px auto 0;
+			width: 254px;
+			height: 127px;
+		}
+
+		.title {
+			margin-top: 30px;
+			text-align: center;
+		}
+
+		.spincrement {
+			margin-bottom: 30px;
+			text-align: center;
+		}
+	}
+}
